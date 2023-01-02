@@ -1,7 +1,6 @@
 package id.ac.undiksha.siak.entities;
 
-public class Lecturer extends Person{
-	
+public class Lecturer extends Person {
 	private String nip;
 	private String studyProgram;
 	private String departement;
@@ -59,6 +58,5 @@ public class Lecturer extends Person{
 	}
 	public void setFaculty(String faculty) {
 		this.faculty = faculty;
-	}
-
+	} 
 }

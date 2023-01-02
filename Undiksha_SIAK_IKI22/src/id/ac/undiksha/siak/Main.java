@@ -46,14 +46,14 @@ public class Main {
 //		);
 //		stf1.printAllInfo();
 //		
-		Student std2 = new Student(
-				"Sung Jin-woo", 
-				"South Korea", 
-				true, 
-				"1234567890", 
-				"Ilmu Komputer", 
-				"TI", 
-				"FTK");
+//		Student std2 = new Student(
+//				"Sung Jin-woo", 
+//				"South Korea", 
+//				true, 
+//				"1234567890", 
+//				"Ilmu Komputer", 
+//				"TI", 
+//				"FTK");
 		
 		Staff stf1 = new Staff(
 				"Kim Dok-ja", 
@@ -70,7 +70,7 @@ public class Main {
 				"ILKOM", 
 				"TI", 
 				"FTK");
-		std2.printAllInfo();
+//		std2.printAllInfo();
 		stf1.printAllInfo();
 		lect1.printAllInfo();
 //		Person personA = new Person;
@@ -83,6 +83,22 @@ public class Main {
 //		System.out.println(std1.getAddress());
 //		System.out.println(std1.getName());
 		//overidding
+		
+		Student std3 = new Student();
+		std3.setName("Ebina");
+		std3.setAddress("Japan");
+		std3.setNim("467002");
+		std3.setGender(false);
+		std3.getStudyProgram().setStudyProgramCode("2115");
+		std3.getStudyProgram().setStudyProgramName("Ilmu Komputer");
+//		Student -> Study Program -> Coordinator -> Name
+		std3.getStudyProgram().getCoordinator().setName("Shizuka Hiratsuka");
+		std3.getStudyProgram().getCoordinator().setNip("875983265");
+		std3.getStudyProgram().getCoordinator().setGender(false);
+		std3.getStudyProgram().getCoordinator().setAddress("Japan");
+		std3.printAllInfo();
+		std3.getName();
+		std3.getStudyProgram().getStudyProgramName();
 	}
 
 }
